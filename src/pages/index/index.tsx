@@ -1,5 +1,5 @@
 import Taro, { Component, Config } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View, Text ,Button } from '@tarojs/components'
 import './index.scss'
 
 export default class Index extends Component {
@@ -15,9 +15,15 @@ export default class Index extends Component {
     navigationBarTitleText: '首页'
   }
 
+  state={
+    name: 'bob'
+  }
+
   componentWillMount () { }
 
-  componentDidMount () { }
+  componentDidMount () { 
+    // this.setState({name:"bob"});
+  }
 
   componentWillUnmount () { }
 
@@ -25,10 +31,15 @@ export default class Index extends Component {
 
   componentDidHide () { }
 
+  click()
+  {
+      this.setState({name:"lisi"},()=>{  console.log(this.state.name);}); 
+  }
   render () {
     return (
       <View className='index'>
-        <Text>Hello world!</Text>
+       <Button onClick={this.click}>click事件绑定</Button>
+        <Text>{this.state.name}</Text>
       </View>
     )
   }

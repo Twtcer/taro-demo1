@@ -20,6 +20,7 @@ class App extends Component {
    */
   config: Config = {
     pages: [
+      'pages/base/base',
       'pages/index/index'
     ],
     window: {
