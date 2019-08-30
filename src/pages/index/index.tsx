@@ -2,6 +2,8 @@ import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text ,Button } from '@tarojs/components'
 import './index.scss'
 
+import Head from  '../../components/head/head'
+
 export default class Index extends Component {
 
   /**
@@ -31,15 +33,12 @@ export default class Index extends Component {
 
   componentDidHide () { }
 
-  click()
-  {
-      this.setState({name:"lisi"},()=>{  console.log(this.state.name);}); 
-  }
+   
   render () {
     return (
       <View className='index'>
-       <Button onClick={this.click}>click事件绑定</Button>
-        <Text>{this.state.name}</Text>
+       <Head/>
+       <Text className='test'>Hello World!</Text>
       </View>
     )
   }

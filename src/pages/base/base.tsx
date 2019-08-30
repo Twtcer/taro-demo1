@@ -2,7 +2,7 @@ import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text, Button } from '@tarojs/components'
 import './base.scss'
 
-import Child from '../../components/base/Child';
+import Child from '../../components/base/child';
 
 export default class Base extends Component {
 
