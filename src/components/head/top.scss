@@ -1,10 +1,10 @@
 .top
 {
-    height: 80px; 
+    height: 80px;
     background: red;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;  
+    justify-content: space-between;
     padding-top: 10PX;
     // padding: 3PX;
 
@@ -13,17 +13,18 @@
         width: 28PX;
         height: 28PX;
     }
-     
+
     .left
     {
         .img{
             margin-right: 15PX;
-        }  
+        }
     }
     .right
     {
         .img{
             margin-left: 15PX;
+            justify-content: space-around;
         }
     }
 

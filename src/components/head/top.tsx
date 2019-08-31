@@ -5,6 +5,7 @@ import backPng from '../../assets/image/base/back.png'
 import searchPng from '../../assets/image/base/search.png'
 import collectPng from '../../assets/image/base/collect.png'
 import tuanPng from '../../assets/image/base/tuan.png'
+import morePng from '../../assets/image/base/more.png'
 
 import './top.scss'
 
@@ -18,8 +19,9 @@ export default class Top extends Component {
           <Image src={searchPng} className='img'></Image>
           <Image src={collectPng} className='img'></Image>
           <Image src={tuanPng} className='img'></Image>
+          <Image src={morePng} className='img'></Image>
         </View>
       </View>
     );
   }
-} 
+}
