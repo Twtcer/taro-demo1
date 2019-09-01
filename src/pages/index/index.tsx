@@ -23,7 +23,7 @@ export default class Index extends Component {
 
   componentWillMount () { }
 
-  componentDidMount () { 
+  componentDidMount () {
     // this.setState({name:"bob"});
   }
 
@@ -33,12 +33,12 @@ export default class Index extends Component {
 
   componentDidHide () { }
 
-   
+
   render () {
     return (
       <View className='index'>
        <Head/>
-       <Text className='test'>Hello World!</Text>
+
       </View>
     )
   }
