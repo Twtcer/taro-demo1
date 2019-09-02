@@ -1,0 +1,22 @@
+.activity{
+    font-size: 12PX;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10PX;
+    margin-top: 10PX;
+    .type{
+        color: #ffffff;
+        background-color: #ff0000;
+        height: 20PX;
+        width:  20PX; 
+        border-radius: 2PX;
+        padding-left: 10PX;
+        }
+    .activityDes{
+
+    }
+    .activityLength{
+        color: #CCCCCC;
+    }
+}

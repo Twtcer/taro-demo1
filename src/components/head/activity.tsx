@@ -1,38 +1,54 @@
-import Taro , { Component } from '@tarojs/taro';
-import { View, Text , Image} from '@tarojs/components';
+import Taro, { Component } from '@tarojs/taro';
+import { View, Text, Image } from '@tarojs/components';
+import './activity.scss';
 
 export default class Activity extends Component {
 
-  constructor(){
+  constructor() {
     super(...arguments)
     this.state = {
-      activity:[
+      activity: [
         {
-          type:'cut',
-          info:[{total:38,cut:10},{total:58,cut:20},{total:100,cut:30}]
-
+          type: 'cut',
+          info: [
+            { total: 38, cut: 10 },
+            { total: 58, cut: 20 },
+            { total: 100, cut: 30 }
+          ]
         }
       ]
     }
 
   }
 
-  state={}
+  getActivityType(type) {
+    switch (type) {
+      case 'cut':
+        {
+          return '减';
+          break;
+        }
+      default:
+        return '减';
+        break;
+    }
+  }
 
-  componentWillMount () {}
-  componentDidMount () {}
-  componentWillReceiveProps (nextProps,nextContext) {}
-  componentWillUnmount () {}
-  componentDidShow () {}
-  componentDidHide () {}
-  componentDidCatchError () {}
-  componentDidNotFound () {}
+  activityDesFormatter(arr) {
+    // console.log(JSON.stringify(arr));
+    let data = arr.map((item, index) => `满${item.total}减${item.cut}`).join(';');
+    // console.log(data);
+    return data;
+  }
+
   render() {
+    let {activity} = this.state; 
+    let first = activity[0];
     return (
-      <View>
-        <Text>满</Text>
-        <Text>满48减10；满58减20；满100减30</Text>
-        <Text>3个活动</Text>
+      <View className='activity'>
+        <Text className='type'>{this.getActivityType(first.typs)}</Text>
+        <Text className='activityDes'>{this.activityDesFormatter(first.info)}</Text>
+        <Text className='activityLength'>{first.info.length}个活动</Text>
       </View>
     );
   }
