@@ -1,0 +1,24 @@
+.option {
+  position: relative;
+  .optionImg{
+    width: 15PX;
+    height: 15PX;
+  }
+  .foodNum{
+    min-width: 28PX;
+    height: 15PX;
+    line-height: 15PX;
+    font-size: 14PX;
+  }
+  .cut{
+    width: 28PX;
+    height: 28PX;
+  }
+  .add{
+    width: 28PX;
+    height: 28PX;
+  }
+  .hide{
+    display: none;
+  }
+}

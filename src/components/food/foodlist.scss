@@ -1,0 +1,25 @@
+.foodList{
+  padding: 10PX;
+    flex-grow: 1;
+    .footItem{
+      display: flex;
+      flex-grow: 1;
+      flex-direction: row;
+      margin-top: 15PX;
+      .foodImg{
+        width: 80PX;
+        height: 80PX;
+        border-radius: 5PX;
+      }
+      .foodInfo {
+        position: relative;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        font-size: 14PX;
+        margin-left: 10PX;
+        height: 80PX;
+        justify-content: space-between;
+      }
+    }
+}
