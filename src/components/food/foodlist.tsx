@@ -26,7 +26,7 @@ export default class FoodList extends Component {
                   <Text>{item.title}</Text>
                   <Text>月售：{item.sale}</Text>
                   <Text className='rmb'> ￥ {item.price}</Text>
-                  <AddCut food={item}/>>
+                  <AddCut food={item}/>
                 </View>
               </View>
             )

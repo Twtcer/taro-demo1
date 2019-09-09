@@ -46,7 +46,10 @@ export default class AddCut extends Component {
 
   AddFood() {
     if (this.props.food) {
-      setFoodCount(this.props.food, this.state.num,"add");
+      setFoodCount(this.props.food, this.state.num,"add",()=>{
+        let count = getFoodCount(this.props.food);
+        this.setState({ num: count });
+      });
     }
   }
 

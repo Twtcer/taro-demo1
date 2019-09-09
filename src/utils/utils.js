@@ -17,7 +17,7 @@ export function setFoodCount(food, num, type, callback) {
     if(!store ){store = {};}
     if (type == "add") {
       if (store[food.id]) {
-        store[food.id] = num + 1;
+        store[food.id].num = num + 1;
 
       } else {
         store[food.id] = { num: 1, ...food };
@@ -33,7 +33,7 @@ export function setFoodCount(food, num, type, callback) {
       }
       else {
         if (store[food.id]) {
-          store[food.id] = num - 1;
+          store[food.id].num = num - 1;
         }
       }
       Taro.setStorageSync(foodKey, store);
