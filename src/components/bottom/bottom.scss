@@ -1,0 +1,50 @@
+.bottom{ 
+    width:100%; 
+    display: flex;
+    justify-content: center;
+    position: fixed; 
+    bottom: 50PX;
+    left: 0;
+    height: 50PX;
+    .bottom_body{
+        padding: 0 10PX;
+        height: 50PX;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        padding: 0 10PX;
+        width: 90%;
+        border-radius: 50PX; 
+        background-color: #3A2B36;
+        color: #fff;
+        font-size: 14PX;  
+        .cart{
+            height: 50PX;
+            width: 50PX;
+            margin-top: -20PX;
+            margin-left: 20PX;
+        }
+        .info{
+            height: 50PX;
+            line-height: 50PX;
+        }
+        .submit{
+            height: 50PX;  
+            line-height: 50PX;
+            font-size: 18PX;
+        }
+        .num{
+           position: absolute; 
+           margin-left: 60PX;
+           margin-top: -20PX;
+           height: 20PX;
+           width: 20PX;
+           border-radius: 50%;
+           color: #fff;
+           background-color: #f00;
+           line-height: 20PX;
+           text-align: center;
+           z-index:2 ;
+        }
+    } 
+}
