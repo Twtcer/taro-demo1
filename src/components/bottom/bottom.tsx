@@ -15,13 +15,13 @@ export default class Bottom extends Component {
     minPrice: 20,
     sendPrice: 4,
     bySelf: true,
-    allPrice:0, 
+    allPrice:0,
   }
 
   componentWillMount() { }
   componentDidMount() {
     //获取整体的存储的菜品数据进行计算
-    //获取计算好的值设置给state 
+    //获取计算好的值设置给state
     let { allPrice, allNum } = getAllFoodInfo();
     this.setState({allPrice:allPrice,num:allNum});
    }
@@ -44,10 +44,10 @@ export default class Bottom extends Component {
           {bySelf ? <Text > 支持自取</Text> : null}
           </View>
           <View className='submit'>
-            {minPrice ? <Text>￥{minPrice}起送</Text> : null} 
+            {minPrice ? <Text>￥{minPrice}起送</Text> : null}
           </View>
         </View>
       </View>
     );
   }
-} 
+}

@@ -11,7 +11,6 @@ export function getAllFoodInfo() {
   let allNum = 0;
   if (store) {
     Object.keys(store).map((key) => {
-      debugger
       if (store[key]) {
         allPrice += store[key].price * store[key].num;
         allNum += store[key].num;
