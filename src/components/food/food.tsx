@@ -45,7 +45,7 @@ export default class Food extends Component {
       sale: Math.round(Math.random() * 50),
       price: Math.round(Math.random() * 20)
     }));
-    console.log(JSON.stringify(data));
+    // console.log(JSON.stringify(data));
     return data;
   }
 
